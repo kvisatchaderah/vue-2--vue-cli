@@ -2,6 +2,7 @@ export default {
   // data
   data() {
     return {
+      cube_key: 0,
       keydown_data: {
         ArrowUp: this.keydown_arrow_up,
         ArrowDown: this.keydown_arrow_down,
@@ -99,6 +100,7 @@ export default {
         ...res,
       }
       if (this.is_win()) this.set_win()
+      this.matrix = [...this.matrix]
     },
 
     //
@@ -118,12 +120,12 @@ export default {
     is_win() {
       for (let i = 2; i < this.matrix.length; i++)
         if (!this.right_pos_for_cube(i)) return false
-
       return true
     },
 
     set_error(num) {
       this.matrix[num].error = true
+      this.cube_key++
       setTimeout(() => {
         this.matrix[num].error = false
       }, 400)

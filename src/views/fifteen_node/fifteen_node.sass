@@ -9,8 +9,6 @@
 	flex-direction: column
 	align-content: center
 	justify-content: flex-start
-	& *, & *::before, & *::after
-		box-sizing: content-box
 
 .game_control
 	display: flex
@@ -39,8 +37,7 @@ $cube_outline_padding: 6px
 	cursor: pointer
 
 	font-size: 2.5rem
-
-	transition: 200ms
+	transition: all ease-in 200ms
 	&.note_event
 		pointer-event: none
 		opacity: 0
