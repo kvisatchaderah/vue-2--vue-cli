@@ -6,9 +6,7 @@
       <router-link to="/fifteen_node"> пятнашки node </router-link>
       <router-link to="/grafik_canvas"> grafik_canvas </router-link>
     </nav>
-    <style lang="sass">
-      @import 'sass/template.sass'
-    </style>
+
     <router-view />
   </div>
 </template>
