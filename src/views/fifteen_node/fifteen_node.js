@@ -1,3 +1,5 @@
+import { BFormInput } from 'bootstrap-vue'
+
 export default {
   // data
   data() {
@@ -18,6 +20,9 @@ export default {
       win: false,
     }
   },
+
+  // components
+  components: { BFormInput },
 
   // computed
   computed: {

@@ -1,7 +1,5 @@
 <template>
   <section id="fifteen" class="fifteen">
-    <h1>Пятнашки CANVAS</h1>
-
     <div class="game_control" @keydown="key_down">
       <!-- settings -->
       <input

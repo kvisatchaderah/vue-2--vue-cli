@@ -1,6 +1,37 @@
 <template>
   <section id="grafik_canvas" class="grafik_canvas">
-    <h1>grafik_canvas</h1>
+    <div class="game_control">
+      <!-- settings -->
+      <input
+        v-model="game_settings_in_node.row_quantity"
+        type="number"
+        min="1"
+        max="10"
+        @keydown.stop
+      />
+      <input
+        v-model="game_settings_in_node.col_quantity"
+        type="number"
+        min="1"
+        max="10"
+        @keydown.stop
+      />
+      <input
+        v-model="game_settings_in_node.row_quantity"
+        type="number"
+        min="1"
+        max="10"
+        @keydown.stop
+      />
+      <input
+        v-model="game_settings_in_node.col_quantity"
+        type="number"
+        min="1"
+        max="10"
+        @keydown.stop
+      />
+      <!-- /settings -->
+    </div>
   </section>
 </template>
 

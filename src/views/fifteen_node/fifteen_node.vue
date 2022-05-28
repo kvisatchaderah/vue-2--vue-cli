@@ -1,20 +1,29 @@
 <template>
   <section id="fifteen" class="fifteen">
-    <h1>Пятнашки NODE</h1>
-
-    <div class="game_control" @keydown="key_down">
+    <div class="game_control">
       <!-- settings -->
-      <input
+      <b-form-input
         v-model="game_settings_in_node.row_quantity"
+        class="btn-dark"
         type="number"
         min="1"
         max="10"
+        @keydown.stop
+      />
+      <input
+        v-model="game_settings_in_node.row_quantity"
+        class="btn-dark"
+        type="number"
+        min="1"
+        max="10"
+        @keydown.stop
       />
       <input
         v-model="game_settings_in_node.col_quantity"
         type="number"
         min="1"
         max="10"
+        @keydown.stop
       />
       <!-- /settings -->
 
