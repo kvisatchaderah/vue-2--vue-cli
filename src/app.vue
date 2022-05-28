@@ -3,7 +3,7 @@
     <nav>
       <router-link to="/"> home </router-link>
       <router-link to="/fifteen_canvas"> пятнашки canvas </router-link>
-      <router-link to="/fifteen_node"> пятнашки node </router-link>
+      <router-link to="/fifteen_node"> пятнашки node 1 </router-link>
       <router-link to="/grafik_canvas"> grafik_canvas </router-link>
     </nav>
 
