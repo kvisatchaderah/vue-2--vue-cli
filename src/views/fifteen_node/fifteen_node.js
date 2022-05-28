@@ -1,4 +1,4 @@
-import { BFormInput } from 'bootstrap-vue'
+import { BFormInput, BButton } from 'bootstrap-vue'
 
 export default {
   // data
@@ -22,7 +22,7 @@ export default {
   },
 
   // components
-  components: { BFormInput },
+  components: { BFormInput, BButton },
 
   // computed
   computed: {

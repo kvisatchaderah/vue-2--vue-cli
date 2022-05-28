@@ -1,37 +1,52 @@
 <template>
   <section id="grafik_canvas" class="grafik_canvas">
-    <div class="game_control">
-      <!-- settings -->
-      <input
-        v-model="game_settings_in_node.row_quantity"
+    <!-- settings -->
+    <div class="settings d-flex mb-3">
+      <span class="m-1"> X: </span>
+      <b-form-input
+        v-model="grafik_settings_in_node.x_max"
+        class="gc__btn btn-dark m-1"
         type="number"
         min="1"
         max="10"
         @keydown.stop
+        @keydown.enter="start_grafik"
       />
-      <input
-        v-model="game_settings_in_node.col_quantity"
+      <span class="m-1"> Y: </span>
+      <b-form-input
+        v-model="grafik_settings_in_node.y_max"
+        class="gc__btn btn-dark m-1"
         type="number"
         min="1"
         max="10"
         @keydown.stop
+        @keydown.enter="start_grafik"
       />
-      <input
-        v-model="game_settings_in_node.row_quantity"
-        type="number"
-        min="1"
-        max="10"
-        @keydown.stop
-      />
-      <input
-        v-model="game_settings_in_node.col_quantity"
-        type="number"
-        min="1"
-        max="10"
-        @keydown.stop
-      />
-      <!-- /settings -->
     </div>
+    <!-- /settings -->
+
+    <!-- functions -->
+    <div class="functions d-flex mb-3">
+      <a
+        v-for="(f, index) in functions"
+        :key="index"
+        class="m-1 mr-3 pb-3 pr-3"
+        v-html="f.title"
+        @click="new_function(f.function)"
+      ></a>
+    </div>
+    <!-- /functions -->
+
+    <!-- grids -->
+    <canvas
+      id="grids"
+      class="grids"
+      :style="{
+        width: grafik_settings.width + 'px',
+        height: grafik_settings.height + 'px',
+      }"
+    ></canvas>
+    <!-- /grids -->
   </section>
 </template>
 

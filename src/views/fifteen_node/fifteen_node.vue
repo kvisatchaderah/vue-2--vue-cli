@@ -4,31 +4,28 @@
       <!-- settings -->
       <b-form-input
         v-model="game_settings_in_node.row_quantity"
-        class="btn-dark"
+        class="btn-dark m-1"
         type="number"
         min="1"
         max="10"
         @keydown.stop
+        @keydown.enter="start_game"
       />
-      <input
-        v-model="game_settings_in_node.row_quantity"
-        class="btn-dark"
-        type="number"
-        min="1"
-        max="10"
-        @keydown.stop
-      />
-      <input
+      <b-form-input
         v-model="game_settings_in_node.col_quantity"
+        class="btn-dark m-1"
         type="number"
         min="1"
         max="10"
         @keydown.stop
+        @keydown.enter="start_game"
       />
       <!-- /settings -->
 
       <!-- start -->
-      <button type="button" @click="start_game">Старт</button>
+      <b-button class="btn-dark m-1" type="button" @click="start_game"
+        >Старт</b-button
+      >
       <!-- /start -->
     </div>
 

@@ -34,7 +34,3 @@
     },
   }
 </script>
-
-<style lang="sass">
-  @import 'sass/template.sass'
-</style>
