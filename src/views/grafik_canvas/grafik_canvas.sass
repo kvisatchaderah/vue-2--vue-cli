@@ -4,18 +4,31 @@
 
 button, input
 	max-width: 200px
+	font-weight: bold
 
 .settings,
 .functions
-	span, a
+	span
+		padding-left: 10px
+		min-width: 70px
+
 		display: flex
-		justify-content: center
+		justify-content: flex-start
 		align-items: center
 
-		font-weight: bold
 		font-size: 20px
 
+.settings
+	span
+		padding-left: 10px
+		min-width: 70px
+
 .functions
-	a
+	span
 		cursor: pointer
+		padding-left: 10px
+		padding-right: 10px
 		font-size: 24px
+		font-weight: bold
+		&:hover
+			color: var(--ch)

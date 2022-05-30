@@ -1,22 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap')
 
+:root
+	--c: #cecece
+	--ch: #f3b840
+	--ca: #ff7433
+
 body,
 html
 	font-family: 'Roboto', sans-serif
 	font-weight: 300
 	background-color: #181111
-	color: #cecece
+	color: var(--c)
 
 h1, h2, h3
 	font-weight: 700
 
 a
-	color: #cecece
+	color: var(--c)
 	text-decoration: none
 	&:hover
-		color: #f3b840
+		color: var(--ch)
 	&.router-link-exact-active
-		color: #ff7433
+		color: var(--ca)
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button
