@@ -3,14 +3,16 @@
     <b-container>
       <!-- nav -->
       <b-row class="my-3">
-        <b-col><router-link to="/"> home </router-link></b-col>
-        <b-col>
+        <b-col class="text-center">
+          <router-link to="/"> home </router-link></b-col
+        >
+        <b-col class="text-center">
           <router-link to="/fifteen_canvas"> пятнашки canvas </router-link>
         </b-col>
-        <b-col>
+        <b-col class="text-center">
           <router-link to="/fifteen_node"> пятнашки node </router-link>
         </b-col>
-        <b-col>
+        <b-col class="text-center">
           <router-link to="/grafik_canvas"> grafik_canvas </router-link>
         </b-col>
       </b-row>

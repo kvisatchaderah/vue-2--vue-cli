@@ -10,7 +10,7 @@
         min="1"
         max="10"
         @keydown.stop
-        @keydown.enter="start_grafik"
+        @keydown.enter="init_grafik"
       />
       <span class="m-1"> Y: </span>
       <b-form-input
@@ -20,7 +20,7 @@
         min="1"
         max="10"
         @keydown.stop
-        @keydown.enter="start_grafik"
+        @keydown.enter="init_grafik"
       />
     </div>
     <!-- /settings -->
@@ -35,7 +35,7 @@
         min="1"
         max="10"
         @keydown.stop
-        @keydown.enter="start_grafik"
+        @keydown.enter="init_grafik"
       />
       <span class="m-1"> height: </span>
       <b-form-input
@@ -45,7 +45,7 @@
         min="1"
         max="10"
         @keydown.stop
-        @keydown.enter="start_grafik"
+        @keydown.enter="init_grafik"
       />
     </div>
     <!-- /settings -->
