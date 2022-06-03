@@ -9,6 +9,8 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import '@/sass/template.sass'
 
+// require('@core/assets/fonts/feather/iconfont.css')
+
 new Vue({
   router,
   render: (h) => h(App),
