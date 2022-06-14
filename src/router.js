@@ -27,5 +27,10 @@ export default new VueRouter({
       path: '/grafik_canvas',
       component: () => import('@/views/grafik_canvas/grafik_canvas.vue'),
     },
+    {
+      name: 'chart',
+      path: '/chart',
+      component: () => import('@/views/chart/chart.vue'),
+    },
   ],
 })

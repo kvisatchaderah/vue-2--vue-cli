@@ -15,6 +15,9 @@
         <b-col class="text-center">
           <router-link to="/grafik_canvas"> grafik_canvas </router-link>
         </b-col>
+        <b-col class="text-center">
+          <router-link to="/chart"> chart </router-link>
+        </b-col>
       </b-row>
       <!-- nav -->
 
